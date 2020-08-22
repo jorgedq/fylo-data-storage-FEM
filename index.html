@@ -1,31 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo data storage component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Fylo data storage component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="page">
+        <img class="page__logo" src="./images/logo.svg" alt="icon" />
+        <div class="actions">
+          <a class="actions__img" href="#"
+            ><img src="./images/icon-document.svg" alt="img document"
+          /></a>
+          <a class="actions__img" href="#"
+            ><img src="./images/icon-folder.svg" alt="img folder"
+          /></a>
+          <a class="actions__img" href="#">
+            <img src="./images/icon-upload.svg" alt="img upload" />
+          </a>
+        </div>
+      </div>
+      <div class="storage">
+        <p class="storage__text">
+          You’ve used <span>815 GB</span> of your storage
+        </p>
+        <div class="capacity">
+          <div class="capacity__progress">
+            <div class="capacity__progress-bar"></div>
+          </div>
+          <div class="capacity__values">
+            <div>0 GB</div>
+            <div>1000 GB</div>
+          </div>
+        </div>
+        <div class="rest">
+          <p class="rest__text"><span>185</span> GB Left</p>
+        </div>
+      </div>
+    </main>
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </div> -->
+  </body>
 </html>
